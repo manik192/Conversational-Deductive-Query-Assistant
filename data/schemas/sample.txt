@@ -1,0 +1,15 @@
+TABLE: human_resources
+Columns:
+- id (TEXT)   NULLABLE
+- first_name (TEXT)   NULLABLE
+- last_name (TEXT)   NULLABLE
+- birthdate (TEXT)   NULLABLE
+- gender (TEXT)   NULLABLE
+- race (TEXT)   NULLABLE
+- department (TEXT)   NULLABLE
+- jobtitle (TEXT)   NULLABLE
+- location (TEXT)   NULLABLE
+- hire_date (TEXT)   NULLABLE
+- termdate (TEXT)   NULLABLE
+- location_city (TEXT)   NULLABLE
+- location_state (TEXT)   NULLABLE
