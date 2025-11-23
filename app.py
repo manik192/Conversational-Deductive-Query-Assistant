@@ -93,7 +93,9 @@ if not models:
     st.stop()
 
 model_names = [model.name() for model in models]
-selected_model_name = st.sidebar.selectbox("Select AI Model:", model_names)
+default_index = model_names.index("Gemini") if "Gemini" in model_names else 0
+
+selected_model_name = st.sidebar.selectbox("Select AI Model:", model_names, index=default_index)
 selected_model = next((m for m in models if m.name() == selected_model_name), None)
 
 model_variants = selected_model.get_variants()
